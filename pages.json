@@ -1,0 +1,98 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "北辰区产业招商地图"
+			}
+		},{
+			"path": "pages/carrier",
+			"style": {
+				"navigationBarTitleText": "选择载体"
+			}
+		},{
+			"path": "pages/carrierList",
+			"style": {
+				"navigationBarTitleText": " "
+			}
+		},{
+			"path": "pages/carrierDetail",
+			"style": {
+				"navigationBarTitleText": " "
+			}
+		},{
+			"path": "pages/industry",
+			"style": {
+				"navigationBarTitleText": "产业"
+			}
+		},{
+			"path": "pages/industryList",
+			"style": {
+				"navigationBarTitleText": "产业"
+			}
+		},{
+			"path": "pages/industryDetail",
+			"style": {
+				"navigationBarTitleText": " "
+			}
+		},{
+			"path": "pages/companyDetail",
+			"style": {
+				"navigationBarTitleText": "产业结构详情"
+			}
+		},{
+			"path": "pages/importantDetail",
+			"style": {
+				"navigationBarTitleText": "招商重点"
+			}
+		},{
+			"path": "pages/policy",
+			"style": {
+				"navigationBarTitleText": "政策"
+			}
+		},{
+			"path": "pages/policyDetail",
+			"style": {
+				"navigationBarTitleText": "政策详情"
+			}
+		},{
+			"path": "pages/leadingDetail",
+			"style": {
+				"navigationBarTitleText": "产业结构详情"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#222",
+		"selectedColor": "#0986E9",
+		"list": [
+			{
+				"pagePath": "pages/index",
+				"iconPath": "static/footer1.png",
+				"selectedIconPath": "static/footer1a.png",
+				"text": "首页"
+			},{
+				"pagePath": "pages/industry",
+				"iconPath": "static/footer4.png",
+				"selectedIconPath": "static/footer4a.png",
+				"text": "产业"
+			},{
+				"pagePath": "pages/policy",
+				"iconPath": "static/footer2.png",
+				"selectedIconPath": "static/footer2a.png",
+				"text": "政策"
+			},{
+				"pagePath": "pages/carrier",
+				"iconPath": "static/footer3.png",
+				"selectedIconPath": "static/footer3a.png",
+				"text": "载体"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
