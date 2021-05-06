@@ -2,6 +2,10 @@
 const ajaxUrl = 'https://www.ydbase.com/index.php/Home/'
 const mapLat = 39.275339
 const mapLon = 117.173544
+let shareInfo = {
+	imageUrl: '/static/logo.jpg',
+	title: '北辰区产业招商地图',
+}
 
 export default class common {
 	static ajax(params) {
@@ -79,6 +83,14 @@ export default class common {
 		const regex = new RegExp('<img', 'gi')
 		content = content.replace(regex, `<img style="max-width: 100%;height: auto"`)
 		return content
+	}
+	
+	static setShareInfo(info) {
+		shareInfo = info
+	}
+	
+	static getShareInfo() {
+		return shareInfo
 	}
 
 	static toast(title, icon) {

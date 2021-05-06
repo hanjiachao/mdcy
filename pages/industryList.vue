@@ -28,6 +28,11 @@
 			this.search = options.search
 			this.getList()
 		},
+		onShareAppMessage() {
+			let shareInfo = JSON.parse(JSON.stringify(common.getShareInfo()))
+			shareInfo.path = `/pages/industryList?search=${this.search}`
+			return shareInfo
+		},
 		methods: {
 			getList(){
 				common.ajax({

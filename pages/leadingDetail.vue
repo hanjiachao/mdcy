@@ -85,6 +85,9 @@
 			// this.getList()
 			this.getInfo()
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		methods: {
 			// getDetail() {
 			// 	common.ajax({

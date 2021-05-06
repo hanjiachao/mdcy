@@ -56,6 +56,9 @@
 			this.getPicker()
 			this.getMap()
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		methods: {
 			getPicker() {
 				common.ajax({

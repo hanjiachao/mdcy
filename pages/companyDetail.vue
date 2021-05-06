@@ -24,6 +24,9 @@
 			this.id = options.id
 			this.getDetail()
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		methods: {
 			getDetail() {
 				common.ajax({

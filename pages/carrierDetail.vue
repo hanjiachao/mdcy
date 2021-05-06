@@ -89,6 +89,9 @@
 				showPage: false
 			}
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		onLoad(options) {
 			this.id = options.id
 			this.getDetail()

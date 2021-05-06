@@ -40,6 +40,9 @@
 		onLoad() {
 			this.getList()
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		methods: {
 			getList(){
 				common.ajax({

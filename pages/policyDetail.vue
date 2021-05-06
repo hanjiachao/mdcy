@@ -11,7 +11,7 @@
 			<view class="date">{{info.add_time}}</view>
 			<rich-text :nodes="info.po_content"></rich-text>
 		</view>
-		<view class="contentTitle">相关政策推送</view>
+		<view class="contentTitle" v-if="list.length">相关政策推送</view>
 		<view class="list">
 			<navigator :url="`policyDetail?id=${item.po_id}`" open-type="redirect" class="item" hover-class="active" v-for="(item,index) in list" :key="index">
 				<view class="title">{{item.po_title}}</view>
@@ -41,6 +41,13 @@
 			this.id = options.id
 			this.getDetail()
 		},
+		// onShareAppMessage() {
+		// 	return{
+		// 		imageUrl: '/static/logo.jpg',
+		// 		title: '北辰区产业招商地图',
+		// 		path: `/pages/policyDetail?id=${this.id}`
+		// 	}
+		// },
 		methods: {
 			getDetail(){
 				common.ajax({

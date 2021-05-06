@@ -1,7 +1,16 @@
 <script>
+	import common from '@/utils/common'
 	export default {
 		onLaunch: function() {
-			
+			common.ajax({
+				url: 'Index/getShareContent',
+				success: res => {
+					common.setShareInfo({
+						imageUrl: res.share_image,
+						title: res.share_title
+					})
+				}
+			})
 		}
 	}
 </script>

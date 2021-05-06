@@ -168,6 +168,9 @@
 			this.getDetail()
 			this.getNav()
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		methods: {
 			getNav(){
 				common.ajax({

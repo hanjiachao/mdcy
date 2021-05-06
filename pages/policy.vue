@@ -40,6 +40,9 @@
 			this.getType()
 			// this.getList()
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		onReachBottom() {
 			if(this.refresh){
 				this.getList()

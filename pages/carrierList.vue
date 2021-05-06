@@ -61,6 +61,9 @@
 				refresh: true
 			}
 		},
+		onShareAppMessage() {
+			return common.getShareInfo()
+		},
 		onLoad(options) {
 			this.typeIndex = parseInt(options.index)
 			this.getPicker()
